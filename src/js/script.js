@@ -1,8 +1,10 @@
 $(document).ready(function() {
+    
+    //slider
+    
     $('.carousel__inner').slick({
         speed: 1200,
         autoplay: true,
-        // adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left-solid.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png"></button>',
         responsive: [
@@ -14,6 +16,8 @@ $(document).ready(function() {
                 }
             }]
     });
+
+    //tabs
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
@@ -43,13 +47,38 @@ $(document).ready(function() {
         $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
     });
 
-    // $('.button_mini').on('click', function() {
-    //     $('.overlay, #order').fadeIn('slow');
-    // });
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    //validate
+
+    function validateForms (form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Введите свое имя",
+                phone: "Введите ваш телефон",
+                email: {
+                  required: "Для связи с вами необходим корректный e-mail адрес",
+                  email: "Ваш email адрес должен быть в формате name@domain.com"
+                }
+              }
+        });
+    };
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
