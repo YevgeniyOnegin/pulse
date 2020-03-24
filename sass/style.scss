@@ -1,7 +1,18 @@
+//базовые файлы подключаем первыми ибо из них тянут данные последующие
 @import "base/variables";
+
+* {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
 @import "media";
-@import "blocks/promo";
 @import "blocks/header";
+@import "blocks/promo";
 @import "blocks/buttons";
 @import "blocks/benefits";
 @import "blocks/consultation";
@@ -12,12 +23,4 @@
 @import "blocks/testimonials";
 @import "blocks/footer";
 @import "blocks/modal";
-
-* {
-	font-family: 'Museo Sans Cyrl', sans-serif;
-}
-
-.container {
-	max-width: 950px;
-	margin: 0 auto;
-}
+@import "blocks/pageup";
