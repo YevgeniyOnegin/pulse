@@ -18,7 +18,7 @@ $mail->Password = '34z11bx14s';                           // Наш пароль
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('yevgeniybabanin@gmail.com', 'Письмо с сайта Pulse');   // От кого письмо 
+$mail->setFrom('yevgeniybabanin@gmail.com', 'Пользователь оставил свои контактные данные');   // От кого письмо 
 $mail->addAddress('wishyouevil@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,7 +28,7 @@ $mail->addAddress('wishyouevil@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Письмо с сайта Pulse';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
