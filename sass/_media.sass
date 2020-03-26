@@ -1,3 +1,131 @@
+@media (max-width: 992px)
+	.container
+		width: 750px
+
+	.promo
+		&__header
+			font-size: 38px
+		&__subheader
+			font-size: 38px
+			line-height: 42px
+
+	.benefits
+		h1
+			font-size: 25px
+
+	.catalog__content
+		justify-content: space-between
+
+@media (max-width: 768px)
+	.container
+		width: 650px
+
+	.promo
+		&__header
+			font-size: 38px
+		&__subheader
+			font-size: 28px
+		&__wrapper
+			align-items: center
+
+	.button_main
+		width: 250px
+
+	.benefits
+		max-height: 100%
+		h1
+			font-size: 25px
+			padding: 40px 0 50px 0
+		&__items
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+	.title_left
+		font-size: 30px
+		text-align: center
+
+	.consultation__descr
+		text-align: center
+
+	#consultation-form
+		margin: 36px auto
+
+	.carousel__inner
+		width: 650px
+
+	.slick
+		&-dots
+			display: flex!important
+			justify-content: space-around
+			align-items: center
+			margin-top: 35px
+			li
+				list-style-type: none
+
+@media (max-width: 575px)
+	.container
+		width: 550px
+
+	.header
+		flex-direction: column
+		&__logo
+			margin-bottom: 25px
+		&__official
+			margin-bottom: 25px
+
+	.promo
+		&__wrapper
+			align-items: center
+		&__header
+			text-align: center
+		&__subheader
+			text-align: center
+
+	.title_left
+		font-size: 28px
+		text-align: center
+
+	.consultation__descr
+		text-align: center
+
+	.feed-form
+		margin: 0 auto
+
+	.catalog__content
+		justify-content: center
+
+	.catalog__tab
+		width: 150px
+
+	.catalog__tab div
+		font-size: 15px
+
+	.testimonials-item
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.carousel
+		display: none
+
+	.testimonials-item
+		&__wrapper
+			align-items: center
+			padding: 60px
+		&__name
+			text-align: center
+
+	.footer__map
+		display: none
+
+	.footer__info
+		width: 100%
+		height: 100%
+
+	.footer__addr
+		padding: 0 25px
+
 @media (max-width: 320px)
 	.container
 		width: 300px
@@ -58,7 +186,7 @@
 		flex-direction: column
 
 	.catalog__tab
-		transform: skewX(0deg)
+		transform: skewX(-25deg)
 
 	.title
 		font-size: 25px
@@ -70,120 +198,44 @@
 
 	.testimonials-item__wrapper
 		align-items: center
-		padding-left: 0
-		max-width: 300px
+		padding-left: 30px
 
 	.testimonials-item img
 		max-width: 120px
 		height: 120px
 
-	.footer__map
-		width: 300px
+	.pageup
+		display: none!important
 
-	.footer__info
-		width: 300px
+	.footer
+		height: 350px
+		&__social
+			padding: 0
+		&__addr
+			padding: 0 15px
+		&__social-item
+			padding: 15px
 
-	.footer__social
-		padding: 0
-		width: 300px
-
-	.footer__addr
-		padding: 0 25px
-
-@media (max-width: 575px)
-	.container
-		width: 550px
-
-	.header
-		flex-direction: column
-		&__logo
-			margin-bottom: 25px
-		&__official
-			margin-bottom: 25px
-
-	.promo
-		&__wrapper
-			align-items: center
-		&__header
-			text-align: center
-		&__subheader
-			text-align: center
-
-	.title_left
-		font-size: 28px
-		text-align: center
-
-	.consultation__descr
-		text-align: center
+	.modal
+		top: 65%
+		left: 50%
+		width: 250px
+		min-height: 200px
+		padding: 15px 10px 15px 10px
+		&__close
+			right: 0
+		&__subtitle
+			font-size: 13px
+		&__descr
+			font-size: 10px
 
 	.feed-form
-		margin: 0 auto
+		input
+			height: 35px
+			padding: 0 10px
+			font-size: 10px
+			width: 225px
 
-	.catalog__content
-		justify-content: center
-
-	.catalog__tab
-		width: 150px
-
-	.catalog__tab div
-		font-size: 15px
-
-	.testimonials-item
-		flex-direction: column
-		justify-content: center
-		align-items: center
-
-	.testimonials-item__wrapper
-		align-items: center
-
-	.footer__map
-		width: 550px
-
-	.footer__info
-		width: 500px
-
-	.footer__addr
-		padding: 0 25px
-
-@media (max-width: 768px)
-	.container
-		width: 650px
-
-	.promo
-		&__header
-			font-size: 38px
-		&__subheader
-			font-size: 28px
-
-	.button_main
-		width: 250px
-
-	.benefits
-		height: 100%
-		h1
-			font-size: 25px
-			padding: 40px 0 50px 0
-		&__items
-			flex-direction: column
-			justify-content: center
-			align-items: center
-
-@media (max-width: 992px)
-	.container
-		width: 750px
-
-	.promo
-		&__header
-			font-size: 38px
-		&__subheader
-			font-size: 38px
-			line-height: 42px
-
-	.benefits
-		h1
-			font-size: 25px
-
-	.catalog__content
-		justify-content: space-between
-
-	
+	.button_submit
+		width: 225px
+		font-size: 14px

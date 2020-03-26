@@ -1,3 +1,9 @@
+//libs
+@import "libs/stylesheet";
+@import "libs/bootstrap-reboot.min";
+@import "libs/slick";
+@import "libs/animate";
+
 //базовые файлы подключаем первыми ибо из них тянут данные последующие
 @import "base/variables";
 
@@ -10,8 +16,7 @@
 	margin: 0 auto;
 }
 
-@import "media";
-@import "blocks/header.scss";
+@import "blocks/header";
 @import "blocks/promo";
 @import "blocks/buttons";
 @import "blocks/benefits";
@@ -24,3 +29,4 @@
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/pageup";
+@import "media";
