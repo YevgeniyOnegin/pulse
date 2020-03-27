@@ -29,4 +29,5 @@
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/pageup";
+//media queries подключаем последними иначе не отработают!!!
 @import "media";
